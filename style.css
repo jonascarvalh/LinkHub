@@ -20,11 +20,12 @@ body {
 }
 
 .card {
-    padding: 60px;
-    display: flex;
     align-items: center;
+    display: flex;
     flex-direction: column;
+    padding: 60px 550px;
 }
+
 .image {
     display: flex;
 }
@@ -49,9 +50,15 @@ body {
 .titulo1 {
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
+}
+
+.titulo {
+    display: flex;
+    align-self: flex-start;
+    margin: 0 0 10px 0;
 }
 
 .text {
@@ -123,7 +130,7 @@ a {
 }
 
 .botao-pos {
-    display: block;
+    align-self: flex-start;
 }
 
 .py {
@@ -137,7 +144,7 @@ a {
 .setup {
     border-radius: 10px;
     margin-right: 20px;
-    width: 90px;
+    width: 130px;
 }
 
 .content-setup {
@@ -146,13 +153,38 @@ a {
     align-items: center;
 }
 
-@media screen and (max-width: 450px) {
-	.text {
-        font-size: 10px;
+@media screen and (max-width: 1835px) {
+    .card {
+        padding: 60px 210px;
     }
+}
+
+@media screen and (max-width: 867px) {
+    .card {
+        padding: 60px 110px;
+    }
+}
+@media screen and (max-width: 650px) {
+	.card {
+        padding: 60px;
+    }
+    
+    .content-setup {
+        flex-wrap: wrap;
+    }
+
     .setup-pos {
         display: flex;
         flex-wrap: wrap;
         justify-content: row;
+    }
+
+    .setup {
+        margin: 0 0 10px 0;
+        width: 100px;
+    }
+
+    .text {
+        font-size: 10px;
     }
 }
