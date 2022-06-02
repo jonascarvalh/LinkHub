@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    align-items: center;
+    background-color: #00070C;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.card-base {
+    background-color: #121212;
+    border-radius: 12px;
+    height: 540px;
+    width: 80%;
+}
+
+.card {
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.image {
+    display: flex;
+}
+
+.exp {
+    display: flex;
+    justify-content: center;
+}
+
+.tec {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.profile {
+    height: 90px;
+    margin: auto 0 10px 0;
+    width: 90px;
+}
+
+.titulo1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.text {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.botao {
+    background-color: #121212;
+    border: solid;
+    border-color: #35709F;
+    border-radius: 6px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    height: 45px;
+    margin: 7px 0px 7px 0px;
+    width: 15rem;
+}
+
+.botao:hover {
+    cursor: pointer;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.github, .instagram, .linkedin {
+    width: 30px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.social {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.botao-voltar {
+    align-items: center;
+    border: solid;
+    border-color: white;
+    border-radius: 4px;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    height: 25px;
+    justify-content: left;
+    margin-top: 20px;
+    width: 70px;
+}
+
+.botao-voltar-img {
+    width: 25px;
+}
+
+.botao-pos {
+    display: block;
+}
+
+.py {
+    width: 18px;
+}
+
+.icone + .icone {
+    margin-left: 0.3rem;
+}
+
+.setup {
+    border-radius: 10px;
+    margin-right: 20px;
+    width: 90px;
+}
+
+.content-setup {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+	.text {
+        font-size: 10px;
+    }
+    .setup-pos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: row;
+    }
+}
