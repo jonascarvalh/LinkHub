@@ -16,6 +16,7 @@ body {
     background-color: #121212;
     border-radius: 12px;
     height: 540px;
+    min-width: 300px;
     width: 80%;
 }
 
@@ -58,7 +59,7 @@ body {
 .titulo {
     display: flex;
     align-self: flex-start;
-    margin: 0 0 10px 0;
+    margin: 0 0 0 0;
 }
 
 .text {
@@ -203,6 +204,7 @@ label {
     font-family: 'Montserrat', sans-serif;
     margin: 0 0 2px 0;
 }
+
 @media screen and (max-width: 1835px) {
     .card {
         padding: 60px 210px;
@@ -216,9 +218,9 @@ label {
 }
 @media screen and (max-width: 650px) {
 	.card {
-        padding: 60px;
+        padding: 45px;
     }
-    
+
     .content-setup {
         flex-wrap: wrap;
     }
