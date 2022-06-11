@@ -10,12 +10,36 @@
 <body>
     <div class="card-base">
         <div class="card">
-            <a href="../index.html">
-                <div class="botao-voltar">
-                    <img src="../imgs/back.png" class="botao-voltar-img" alt="">
-                    Voltar
+            <div class="titulo">
+                <h2 class="titulo1">Contato</h2>
+            </div>
+            <div class="form">
+                <label for="input-name">Nome:</label>
+                <input id="input-nome" type="text" class="input">
+                <label for="">E-mail:</label>
+                <input type="email" name="email" id="input-email" class="input">
+                <label for="">Número:</label>
+                <input type="tel" class="input" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                <label for="">Mensagem:</label>
+                <textarea name="msg" id="msg" cols="30" rows="10" class="input"></textarea>
+            </div>
+            <div class="botoes-contato">
+                <div class="">
+                    <a href="../index.html">
+                        <div class="botao-voltar">
+                            <img src="../imgs/back.png" class="botao-voltar-img" alt="">
+                            Voltar
+                        </div>
+                    </a>
                 </div>
-            </a>
+                <div class="">
+                    <a href="../index.html">
+                        <div class="botao-voltar botao-enviar">
+                            Enviar
+                        </div>
+                    </a>
+                </div>
+            </div>
             <div class="footer">
                 <div class="social">
                     <a href="https://github.com/jonascarvalh" target="_blank"><img src="../imgs/social/github.png" alt="github-jonas" class="github"></a>
