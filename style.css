@@ -4,69 +4,17 @@
     margin: 0;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 body {
     align-items: center;
     background-color: #00070C;
     display: flex;
     height: 100vh;
     justify-content: center;
-}
-
-.card-base {
-    background-color: #121212;
-    border-radius: 12px;
-    height: 540px;
-    min-width: 300px;
-    width: 80%;
-}
-
-.card {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding: 60px 550px;
-}
-
-.image {
-    display: flex;
-}
-
-.exp {
-    display: flex;
-    justify-content: center;
-}
-
-.tec {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 24px;
-}
-
-.profile {
-    height: 90px;
-    margin: auto 0 10px 0;
-    width: 90px;
-}
-
-.titulo1 {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.titulo {
-    display: flex;
-    align-self: flex-start;
-    margin: 0 0 0 0;
-}
-
-.text {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    font-weight: 300;
 }
 
 .botao {
@@ -92,47 +40,6 @@ body {
     flex-direction: column;
 }
 
-.github, .instagram, .linkedin {
-    width: 30px;
-}
-
-.footer {
-    margin-top: 20px;
-}
-
-.social {
-    display: flex;
-    gap: 3px;
-    justify-content: center;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-.botao-voltar {
-    align-items: center;
-    border: solid;
-    border-color: white;
-    border-radius: 4px;
-    display: flex;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    font-weight: 300;
-    height: 25px;
-    justify-content: left;
-    margin: 20px 30px 0 0;
-    width: 70px;
-}
-
-.botao-enviar {
-    background-color: #35709F;
-    border-color: #35709F;
-    justify-content: center;
-    margin-left: 30%;
-}
-
 .botao-voltar-img {
     width: 25px;
 }
@@ -151,18 +58,41 @@ a {
     align-self: flex-start;
 }
 
-.py {
-    width: 18px;
+.botao-voltar {
+    align-items: center;
+    border: solid;
+    border-color: white;
+    border-radius: 4px;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    height: 25px;
+    justify-content: flex-start;
+    margin: 20px 30px 0 0;
+    width: 70px;
 }
 
-.icone + .icone {
-    margin-left: 0.3rem;
+.botao-enviar {
+    background-color: #35709F;
+    border-color: #35709F;
+    justify-content: center;
+    margin-left: 30%;
 }
 
-.setup {
-    border-radius: 10px;
-    margin-right: 20px;
-    width: 130px;
+.card-base {
+    background-color: #121212;
+    border-radius: 12px;
+    height: 540px;
+    min-width: 300px;
+    width: 80%;
+}
+
+.card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 550px;
 }
 
 .content-setup {
@@ -171,9 +101,20 @@ a {
     align-items: center;
 }
 
-.form {
+i {
+    font-size: 18px;
+}
+
+.image {
     display: flex;
-    flex-direction: column;
+}
+
+.icone-projeto {
+    margin: 5px;
+}
+
+.icone + .icone {
+    margin-left: 0.3rem;
 }
 
 .input {
@@ -191,11 +132,18 @@ a {
     outline: 0;
 }
 
-#msg {
-    max-height: 100px;
-    min-height: 50px;
-    max-width: 200px;
-    min-width: 200px;
+.exp {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
 }
 
 label {
@@ -203,6 +151,87 @@ label {
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
     margin: 0 0 2px 0;
+}
+
+.link-desativado {
+    cursor: no-drop;
+}
+
+#msg {
+    max-height: 100px;
+    min-height: 50px;
+    max-width: 200px;
+    min-width: 200px;
+}
+
+.profile {
+    height: 90px;
+    margin: auto 0 10px 0;
+    width: 90px;
+}
+
+.tec {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.text {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.titulo1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.titulo {
+    display: flex;
+    align-self: flex-start;
+    margin: 0 0 0 0;
+}
+
+.titulo-projeto {
+    padding: 5px;
+}
+
+.github, .instagram, .linkedin {
+    width: 30px;
+}
+
+.social {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+}
+
+.py {
+    width: 18px;
+}
+
+.projeto {
+    border: 2px solid;
+    border-color: #35709F;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    height: 50px;
+    justify-content: space-between;
+    margin: 15px;
+    width: 255px;
+}
+
+.setup {
+    border-radius: 10px;
+    margin-right: 20px;
+    width: 130px;
 }
 
 @media screen and (max-width: 1835px) {
