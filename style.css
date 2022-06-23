@@ -260,6 +260,9 @@ label {
         justify-content: row;
     }
 
+    .projeto {
+        width: 205px;
+    }
     .setup {
         margin: 0 0 10px 0;
         width: 100px;
